@@ -1,0 +1,238 @@
+/* ESTILO GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body{
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(34, 36, 68) 0%, rgb(18, 17, 56) 43%, rgba(1, 5, 24, 0.979) 63%, rgba(0,0,0,1) 100%);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1250px;
+    margin: 0 auto;
+    
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #85e7be;
+    border: 0;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000000;
+}
+h2.titulo{
+    color: #c5c5c5;
+    font-size: 40px;
+    text-align: center;
+}
+h2.titulo span{
+    color: #85e7be;
+}
+
+button:hover{
+    box-shadow: 0px 0px 15px #c5c5c5;
+    transform: scale(1.2);
+    transition: 1s;
+}
+/* ESTILO DO CABEÇALHO*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+header a{
+    color:#68ffc0;
+    text-decoration: none;
+    display: inline-block;
+    transition: 1s;
+
+}
+header a:hover{
+    color: #c5c5c5;
+    transform: scale(1.09);
+}
+
+
+header nav ul {
+    list-style-type:none;
+    
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+.menu-desktop{
+    font-size: 20px;
+}
+
+/*ESTILO DO TOP DO SITE*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+.topo-do-site h1{
+    color:#68ffc0;
+    font-size: 40px;
+    line-height: 40px;
+}
+.topo-do-site .txt-top-site h1 span{
+    color:#c5c5c5;
+    font-size: 40px;
+}
+.topo-do-site .txt-top-site p{
+    color:#c5c5c5;
+    margin:40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; 
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/*ESTILO DAS ESPECIALIDADES*/
+
+section.especialidades{
+    padding: 30px 4%;
+    
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box{
+    color: #c5c5c5;
+    padding: 20px;
+    border:  2px solid #c5c5c5;
+    border-radius:20px;
+    margin-top: 20px;
+}
+.especialidades .especialidades-box:hover{
+    transform:  scale(1.04);
+    box-shadow: 0 0 20px #85e7be;
+    transition: 1s;
+}
+.especialidades .especialidades-box i{
+    font-size: 70px;
+    color: #85e7be;
+}
+.especialidades .especialidades-box h3{
+font-size: 28px;
+}
+
+
+/*ESTILO DO SOBRE*/
+section.sobre{
+    padding: 120px 4%;
+}
+section.sobre .flex{
+    align-items: center;
+    gap:60px;
+}
+.sobre .txt-sobre{
+    color: #c5c5c5;
+}
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre .txt-sobre h2 span{
+    color: #85e7be;
+    display: block;
+}
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border:none;
+    background-color: #85e7be;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: 1s;
+}
+/* ESTILO PROJETOS */
+section.portfolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 20px 1px #313030
+}
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 6s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover{
+    background-position: 100% 100% 
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #c5c5c5de;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #85e7be; 
+    opacity: 0;
+    transition: .5s;
+    box-shadow: 0 0 20px;
+}
+.overlay:hover{
+    opacity: 1;
+}
